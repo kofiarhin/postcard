@@ -6,6 +6,37 @@ const bold = document.querySelector(".bold")
 const fontColor = document.querySelector("#change-font-color")
 const fontType = document.querySelector("#select-font-type")
 
+
+
+function getImage() {
+    var file = document.querySelector("input[type=file]").files[0];
+    var reader = new FileReader();
+    let dataURI;
+
+    reader.addEventListener(
+        "load",
+        function () {
+            dataURI = reader.result;
+            const img = document.createElement("img");
+            img.src = dataURI;
+            img.classList.add("dragable")
+            editor.appendChild(img);
+        },
+        false
+    );
+
+    if (file) {
+        console.log("s");
+        reader.readAsDataURL(file);
+    }
+}
+
+
+editor.addEventListener("mouseover", function (event) {
+
+
+})
+
 fontType.addEventListener("change", function () {
 
     console.log(this.value)
@@ -14,6 +45,8 @@ fontType.addEventListener("change", function () {
 
     // font-family: 'Open Sans', sans-serif
 })
+
+
 
 
 // change font color

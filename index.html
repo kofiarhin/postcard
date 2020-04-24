@@ -30,7 +30,10 @@
                 <button class="bold"><i class="fa fa-bold" aria-hidden="true"></i></button>
 
                 <!-- insert image -->
-                <button><i class="fas fa-file-image"></i></button>
+                <input class="tool-items fa fa-file-image-o" type="file" accept="image/*" id="file"
+                    style="display: none;" onchange="getImage()">
+
+                <label for="file"><i class="fas fa-file-image"></i> </label>
 
             </div>
 
@@ -122,7 +125,7 @@
         <!-- end cta-wrapper -->
 
     </div>
-
+    <script src="https://cdn.jsdelivr.net/npm/interactjs/dist/interact.min.js"></script>
     <script src="Index.js"></script>
 </body>
 

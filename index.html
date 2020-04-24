@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- font awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css">
+    <!-- custom css -->
+    <link rel="stylesheet" href="css/styles.css">
+    <title>Post Card</title>
+</head>
+
+<body>
+    <h1 class="title">Customize your card</h1>
+
+    <div class="main-wrapper">
+
+        <!-- editor-wrapper -->
+        <div class="editor-wrapper">
+
+            <!-- button wrapper -->
+            <div class="button-wrapper">
+
+                <!-- align center -->
+                <button class="center"><i class="fa fa-align-center" aria-hidden="true"></i></button>
+
+                <!-- bold text -->
+                <button class="bold"><i class="fa fa-bold" aria-hidden="true"></i></button>
+
+                <!-- insert image -->
+                <button><i class="fas fa-file-image"></i></button>
+
+            </div>
+
+            <!-- end button-wrappers -->
+
+            <!-- edittor -->
+            <div class="editor" contenteditable="">
+                <p>
+                    has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a
+                    galley of type and
+                    scrambled it to make a type specimen book. It has survived not only five centuries, but also the
+                    leap into electronic
+                    typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of
+                    Letraset sheets
+                    containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus
+                    PageMaker in
+                </p>
+            </div>
+
+            <!-- end editor -->
+        </div>
+
+        <!-- end editor wrapper -->
+
+        <!-- cta-wrapper -->
+        <div class="cta-wrapper">
+
+            <h2 class="cta-title">Change properties</h2>
+
+            <!-- change background-color -->
+            <!-- cta unit -->
+            <div class="cta-unit">
+                <p>Background-color</p>
+                <select name="" id="background-color">
+                    <option value=""> select color</option>
+                    <option value="white"> white</option>
+                    <option value="orange"> orange</option>
+                    <option value="purple"> purple</option>
+                    <option vaule="#06623b"> green</option>
+                </select>
+            </div>
+            <!-- end cta unit -->
+
+
+            <!-- select font -->
+            <!-- cta unit -->
+            <div class="cta-unit">
+                <p>Select Font</p>
+                <select name="" id="select-font-type">
+                    <option value=""> select font</option>
+                    <option value="Arizonia"> Arizonia</option>
+                    <option value="Fira Sans"> Fira Sans</option>
+                    <option value="Montserrat"> Monsterrat</option>
+                    <option value="Open Sans"> Open Sans</option>
+                </select>
+            </div>
+            <!-- end cta unit -->
+
+            <!-- change font size -->
+            <!-- cta unit -->
+            <div class="cta-unit">
+                <p>Font-Size</p>
+                <select name="" id="change-font-size">
+                    <option value=1> select font-size</option>
+                    <option value=1> P</option>
+                    <option value=2> H1</option>
+                    <option value=3> H2</option>
+                    <option value=4> H3</option>
+                    <option value=5> H4</option>
+                    <option value=6> H5</option>
+                </select>
+            </div>
+            <!-- end cta unit -->
+
+
+            <!-- change font size -->
+            <!-- cta unit -->
+            <div class="cta-unit">
+                <p>Font-Color</p>
+                <select name="" id="change-font-color">
+                    <option value="-">Select color</option>
+                    <option value="white"> white</option>
+                    <option value="red"> Red</option>
+                </select>
+            </div>
+            <!-- end cta unit -->
+        </div>
+
+        <!-- end cta-wrapper -->
+
+    </div>
+
+    <script src="Index.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,89 @@
+// reset browser
+@import "normalize"
+
+// goglge fonts
+// montserrat
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;900&display=swap')
+
+// open sans
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700;800&display=swap')
+
+// arizonia
+@import url('https://fonts.googleapis.com/css2?family=Arizonia&display=swap')
+
+* 
+    margin: 0
+    padding: 0
+    box-sizing: border-box
+
+html, body
+    font-family: 'Montserrat', sans-serif
+
+// general styling
+h1, h2, h3, h4, h5, p
+    margin: 0
+    padding: 0
+p
+    line-height: 1.4
+button
+    outline: none
+    border: none
+    cursor: pointer
+
+.title
+    font-size: 3rem
+    text-align: center
+    margin-top: 2rem
+    margin-bottom: 2rem
+
+.sub-title
+    font-size: 1.4rem
+    margin-bottom: 1.5rem
+
+
+// amin wrapper
+.main-wrapper
+    display: grid
+    grid-template-columns: 2fr 1fr
+    width: 1200px
+    max-width: 90%
+    margin: 0 auto
+
+
+
+// button-wrapper
+.button-wrapper
+    display: flex
+    margin-bottom: 2rem
+    button
+        background: black
+        color: white
+        font-size: 1.3rem
+        padding: 0.8rem 2rem
+        margin-right: 0.8rem
+.editor
+    width: 100%
+    height: 640px
+    padding: 2rem
+    background: rgba(black, 0.1)
+
+.cta-wrapper
+    padding: 2rem
+    .cta-title
+        font:
+            size: 1.2rem
+            weight: 700
+        margin-bottom: 1rem
+
+// cta unit
+.cta-unit
+    font-size: 1.2rem
+    margin-bottom: 2rem
+    p
+        margin-bottom: 0.8rem
+        margin-bottom: 1rem
+    select
+        display: block
+        width: 100%
+        border: 1px solid rgba(black, 0.3)
+        padding: 0.4rem 1rem

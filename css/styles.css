@@ -386,6 +386,70 @@ img {
   margin-bottom: 1.5rem;
 }
 
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(76, 187, 185, 0.9);
+  z-index: 4000;
+  display: none;
+  -webkit-transform: translateX(-120%);
+          transform: translateX(-120%);
+  -webkit-transition: all ease-in-out 00ms;
+  transition: all ease-in-out 00ms;
+}
+
+.overlay.active {
+  display: block;
+  -webkit-transform: translateX(0%);
+          transform: translateX(0%);
+}
+
+.modal {
+  width: 640px;
+  height: 640px;
+  mnax-width: 90%;
+  position: absolute;
+  top: 50%;
+  left: 150%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  padding: 2rem;
+  -webkit-transition: all ease-in-out 300ms;
+  transition: all ease-in-out 300ms;
+  z-index: 5000;
+}
+
+.modal .button-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 2rem 0rem;
+}
+
+.modal.active {
+  display: block;
+  left: 50%;
+}
+
+.modal .modal-title {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.modal .modal-content {
+  height: 100%;
+}
+
+.modal .modal-content .editor-content {
+  height: 100%;
+}
+
 .main-wrapper {
   display: -ms-grid;
   display: grid;
@@ -412,10 +476,14 @@ img {
 }
 
 .editor {
-  width: 100%;
+  width: 640px;
   height: 640px;
+}
+
+.editor-content {
   padding: 2rem;
-  background: rgba(0, 0, 0, 0.1);
+  width: 100%;
+  height: 100%;
 }
 
 .cta-wrapper {
@@ -423,8 +491,8 @@ img {
 }
 
 .cta-wrapper .cta-title {
-  font-size: 1.2rem;
-  font-weight: 700;
+  size: 1.2rem;
+  weight: 700;
   margin-bottom: 1rem;
 }
 
@@ -441,7 +509,40 @@ img {
 .cta-unit select {
   display: block;
   width: 100%;
+  max-width: 100%;
   border: 1px solid rgba(0, 0, 0, 0.3);
   padding: 0.4rem 1rem;
+}
+
+.colors-wrapper {
+  width: 200%;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[8];
+      grid-template-columns: repeat(8, 1fr);
+  grid-gap: 10px;
+}
+
+.colors-wrapper .color {
+  padding-top: 100%;
+  background: pink;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.colors-wrapper .color.blue {
+  background: blue;
+}
+
+.colors-wrapper .color.purple {
+  background: purple;
+}
+
+.colors-wrapper .color.orange {
+  background: orange;
+}
+
+.colors-wrapper .color.red {
+  background-color: red;
 }
 /*# sourceMappingURL=styles.css.map */

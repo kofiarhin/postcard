@@ -15,6 +15,28 @@
 <body>
     <h1 class="title">Customize your card</h1>
 
+
+
+
+    <!-- modal -->
+
+
+    <div class="modal">
+        <h1 class="modal-title">Preview</h1>
+        <div class="modal-content">
+
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore aperiam dolor voluptatibus in corrupti
+            illum dolores! Praesentium at aut, reprehenderit maxime laborum rerum adipisci natus nostrum perspiciatis
+            animi, vitae amet. Iusto quidem fugit dignissimos voluptatum iure nobis odio sunt quo.
+        </div>
+
+        <div class="button-wrapper">
+            <button class="close">close</button>
+        </div>
+    </div>
+
+    <div class="overlay"></div>
+
     <div class="main-wrapper">
 
         <!-- editor-wrapper -->
@@ -35,22 +57,30 @@
 
                 <label for="file"><i class="fas fa-file-image"></i> </label>
 
+
+                <!-- copy -->
+                <button class="bold"><i class="fas fa-copy"></i></button>
+
             </div>
 
             <!-- end button-wrappers -->
 
             <!-- edittor -->
             <div class="editor" contenteditable="">
-                <p>
-                    has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a
-                    galley of type and
-                    scrambled it to make a type specimen book. It has survived not only five centuries, but also the
-                    leap into electronic
-                    typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of
-                    Letraset sheets
-                    containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus
-                    PageMaker in
-                </p>
+                <div class="editor-content">
+                    <p>
+                        has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a
+                        galley of type and
+                        scrambled it to make a type specimen book. It has survived not only five centuries, but also the
+                        leap into electronic
+                        typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release
+                        of
+                        Letraset sheets
+                        containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus
+                        PageMaker in
+                    </p>
+                </div>
+
             </div>
 
             <!-- end editor -->
@@ -67,13 +97,21 @@
             <!-- cta unit -->
             <div class="cta-unit">
                 <p>Background-color</p>
-                <select name="" id="background-color">
+
+                <div class="colors-wrapper">
+                    <div class="color red" id="red"></div>
+                    <div class="color orange" id="orange"></div>
+                    <div class="color purple" id="purple"></div>
+                    <div class="color blue" id="blue"></div>
+
+                </div>
+                <!-- <select name="" id="background-color">
                     <option value=""> select color</option>
                     <option value="white"> white</option>
                     <option value="orange"> orange</option>
                     <option value="purple"> purple</option>
                     <option vaule="#06623b"> green</option>
-                </select>
+                </select> -->
             </div>
             <!-- end cta unit -->
 
@@ -120,12 +158,21 @@
                 </select>
             </div>
             <!-- end cta unit -->
+
+
+            <!-- cta unit -->
+            <div class="cta-unit">
+                <div class="button-wrapper">
+                    <button class="preview">Preivew</button>
+                    <button class="save">Save</button>
+                </div>
+            </div>
+            <!-- end cta unit -->
         </div>
 
         <!-- end cta-wrapper -->
 
     </div>
-    <script src="https://cdn.jsdelivr.net/npm/interactjs/dist/interact.min.js"></script>
     <script src="Index.js"></script>
 </body>
 
